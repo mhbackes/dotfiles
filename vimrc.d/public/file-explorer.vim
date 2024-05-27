@@ -6,14 +6,6 @@ map <C-t> :NERDTreeTabsToggle<CR>
 map <C-f> :NERDTreeFind<CR>
 
 Plug 'dsummersl/vim-projectionist', { 'branch': 'issue-94' }
-let g:projectionist_heuristics = {
-  \  'src/cxx/modules/ng/&src/test/unit/': {
-  \    'src/cxx/modules/ng/*.cxx': { 'alternate': 'src/cxx/modules/ng/{}.hxx', 'type': 'cxx' },
-  \    'src/cxx/modules/ng/*.hxx': { 'alternate': 'src/cxx/modules/ng/{}.cxx', 'type': 'hxx' },
-  \    'src/cxx/modules/ng/*.ixx': { 'alternate': 'src/cxx/modules/ng/{}.hxx', 'type': 'ixx' },
-  \    'src/test/unit/*Test.cxx': { 'alternate': 'src/cxx/modules/ng/{}.cxx', 'type': 'test' },
-  \  }
-  \ }
 
 Plug 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_user_command = {
