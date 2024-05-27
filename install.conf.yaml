@@ -1,0 +1,19 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.bashrc: bashrc
+    ~/.bashrc.d: bashrc.d
+    ~/.tmux.conf: tmux.conf
+    ~/.vimrc: vimrc
+    ~/.vimrc.d: vimrc.d
+
+- create:
+    - ~/.bashrc.d/private/
+    - ~/.vimrc.d/private/
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

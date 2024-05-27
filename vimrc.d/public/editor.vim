@@ -1,0 +1,5 @@
+Plug 'vim-scripts/Tabmerge'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'chaoren/vim-wordmotion'

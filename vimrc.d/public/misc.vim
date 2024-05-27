@@ -1,0 +1,2 @@
+" Colors
+Plug 'chrisbra/Colorizer'
